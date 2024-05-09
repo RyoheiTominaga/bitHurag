@@ -5,17 +5,17 @@
 using namespace std;
 int main()
 {
-    int flags = 0;
-    cout << flags << endl;
-    flags |= (1 << 0);
-    cout << flags << endl;
-    flags |= (1 << 1);
-    cout << flags << endl;
-    flags &= ~(1 << 2);
-    cout << flags << endl;
-    flags |= (1 << 1<<1);
-    cout << flags << endl;
 
+	char flags=0;
+	flags |= (1 << 0);
+	flags |= (1 << 1);//on
+	flags &= ~(1 << 2);//off
+	
+	cout << "flagA:" << ((flags & (1 << 0)) ? "on" : "off") << endl;
+	cout << "flagB:" << ((flags & (1 << 1)) ? "on" : "off") << endl;
+	cout << "flagC:" << ((flags & (1 << 2)) ? "on" : "off") << endl;
+	
+	
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
