@@ -10,11 +10,22 @@ int main()
 	flags |= (1 << 0);
 	flags |= (1 << 1);//on
 	flags &= ~(1 << 2);//off
+	flags |= (1 << 3);
+	flags |= (1 << 4);
+	flags |= (1 << 5);
+	flags &= ~(1 << 6);
+	flags &= ~(1 << 7);
 	
 	cout << "flagA:" << ((flags & (1 << 0)) ? "on" : "off") << endl;
 	cout << "flagB:" << ((flags & (1 << 1)) ? "on" : "off") << endl;
 	cout << "flagC:" << ((flags & (1 << 2)) ? "on" : "off") << endl;
-	
+	cout << "flagD:" << ((flags & (1 << 3)) ? "on" : "off") << endl;
+	cout << "flagE:" << ((flags & (1 << 4)) ? "on" : "off") << endl;
+	cout << "flagF:" << ((flags & (1 << 5)) ? "on" : "off") << endl;
+	cout << "flagG:" << ((flags & (1 << 6)) ? "on" : "off") << endl;
+	cout << "flagH:" << ((flags & (1 << 7)) ? "on" : "off") << endl;
+
+
 	
 }
 
